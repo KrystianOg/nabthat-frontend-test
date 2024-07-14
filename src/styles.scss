@@ -1,0 +1,41 @@
+:root,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100dvh;
+  max-width: 100dvw;
+}
+
+.block {
+  &__title {
+    text-transform: uppercase;
+
+    &--ellipsis {
+      text-wrap: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.header {
+  position: sticky;
+
+  &__logo {
+    display: block;
+  }
+}
+
+.footer {
+  background-color: red;
+
+  &__awesome-text {
+    max-width: 4rem;
+    word-break: keep-all;
+    overflow: visible;
+    border: 1px solid black;
+  }
+}
